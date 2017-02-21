@@ -562,12 +562,12 @@ MD5sum: 5ca977c90351f78b1b888b379114a7b4
 NeedsCompilation: no
 
 Package: swirl
-Version: 101.4.2
+Version: 101.5
 Depends: R (>= 3.2.3)
 Imports: stringr, stringi, testthat, httr (>= 1.1.0), yaml, RCurl,
         digest, tools, utils, rappdirs, methods
 License: MIT + file LICENSE
-MD5sum: 78c13256ef9b0acc49c7f54aa078507c
+MD5sum: f6d7e33291aac52c190cfd7585073af9
 NeedsCompilation: no
 
 Package: testit
