@@ -4,7 +4,7 @@ local({
       install.packages(pkg, repos = "http://wush978.github.io/R")
     }
   }
-  lapply(c("rappdirs", "bitops", "curl"), check_package)
+  lapply(c("rappdirs", "bitops", "curl", "httpuv"), check_package)
   utils::install.packages("swirl", repos = "http://wush978.github.io/R")
 })
 library(swirl)
