@@ -567,7 +567,7 @@ Depends: R (>= 3.2.3)
 Imports: stringr, stringi, testthat, httr (>= 1.1.0), yaml, RCurl,
         digest, tools, utils, rappdirs, methods
 License: MIT + file LICENSE
-MD5sum: 52a6d98096af8437bc85ec0ea690f0b2
+MD5sum: 13d5e989079f2d44ddd06e27dbb30b68
 NeedsCompilation: no
 
 Package: testit
