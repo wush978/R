@@ -115,6 +115,14 @@ Suggests: methods, raster
 License: GPL (>= 3)
 Archs: i386, x64
 
+Package: getPass
+Version: 0.1-1
+Depends: R (>= 3.0.0)
+Imports: utils, rstudioapi (>= 0.5)
+Suggests: knitr, rmarkdown
+License: BSD 2-clause License + file LICENSE
+Archs: i386, x64
+
 Package: GGally
 Version: 1.0.1
 Depends: R (>= 2.14)

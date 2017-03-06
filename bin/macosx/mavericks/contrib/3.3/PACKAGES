@@ -132,6 +132,15 @@ License: GPL (>= 3)
 Archs: geosphere.so.dSYM
 MD5sum: d39e010b92ea17c451409698db482a13
 
+Package: getPass
+Version: 0.1-1
+Depends: R (>= 3.0.0)
+Imports: utils, rstudioapi (>= 0.5)
+Suggests: knitr, rmarkdown
+License: BSD 2-clause License + file LICENSE
+Archs: getPass.so.dSYM
+MD5sum: bdf6e962ad54f0236d6d5044a1625fc6
+
 Package: GGally
 Version: 1.0.1
 Depends: R (>= 2.14)

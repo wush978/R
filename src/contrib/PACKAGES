@@ -140,6 +140,15 @@ License: GPL (>= 3)
 MD5sum: 97e9be0061ac073abd617ffcd5762a7c
 NeedsCompilation: yes
 
+Package: getPass
+Version: 0.1-1
+Depends: R (>= 3.0.0)
+Imports: utils, rstudioapi (>= 0.5)
+Suggests: knitr, rmarkdown
+License: BSD 2-clause License + file LICENSE
+MD5sum: 65170fa15be93456d24e36f608f6be5c
+NeedsCompilation: yes
+
 Package: GGally
 Version: 1.0.1
 Depends: R (>= 2.14)
