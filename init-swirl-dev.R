@@ -8,5 +8,5 @@ local({
   library(curl)
   library(methods)
   try(uninstall_course("DataScienceAndR"), silent=TRUE)
-  install_course_url(sprintf("%s/course/DataScienceAndR.zip", repos = repos))
+  install_course_url(sprintf("%s/course/DataScienceAndR.zip", repos))
 })
