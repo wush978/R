@@ -18,5 +18,6 @@ git2r::add(repo, file.path(path, pkg))
 git2r::add(repo, path)
 version <- read.dcf(file.path("swirl", "DESCRIPTION"))[,"Version"]
 git2r::commit(repo, sprintf("swirl: %s", version))
-git2r::push(repo)
+if (!exists("credentials")) credentials <- NULL
+git2r::push(repo, credentials = credentials)
 unlink(pkg)
