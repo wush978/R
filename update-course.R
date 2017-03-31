@@ -27,5 +27,6 @@ version <- local({
   git2r::branch_target(git2r::head(repo2))
 })
 git2r::commit(repo, sprintf("course: %s", version))
-git2r::push(repo)
+if (!exists("credentials")) credentials <- NULL
+git2r::push(repo, credentials = credentials)
 # unlink(pkg)
