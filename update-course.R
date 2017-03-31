@@ -19,6 +19,7 @@ zip(dst <- file.path("course", "DataScienceAndR.zip"), files = targets)
 # file.copy(pkg, path)
 # tools::write_PACKAGES(path, verbose = TRUE)
 repo <- git2r::repository(".")
+git2r::checkout(repo, "gh-pages")
 git2r::add(repo, dst)
 # git2r::add(repo, path)
 version <- local({
