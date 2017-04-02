@@ -1,0 +1,39 @@
+__version__: 0.2
+1:
+  rstudioapi: 0.6
+  whisker: 0.3-2
+  openssl: 0.9.6
+2:
+  R6: 2.2.0
+  digest: 0.6.12
+  codetools: 0.2-15
+  curl: 2.3
+  pvm: github::repo=wush978/pvm@dcbcb71f529e805493058732b70505759a8f0501
+  mime: 0.5
+3:
+  memoise: 1.0.0
+4:
+  cluster: 2.0.5
+  lattice: 0.20-34
+  nnet: 7.3-12
+  KernSmooth: 2.23-15
+  withr: 1.0.2
+  rpart: 4.1-10
+  boot: 1.3-18
+  spatial: 7.3-11
+5:
+  MASS: 7.3-45
+  nlme: 3.1-129
+  git2r: 0.18.0
+  Matrix: 1.2-7.1
+  XML: 3.98-1.5
+  jsonlite: 1.2
+  foreign: 0.8-67
+6:
+  httr: 1.2.1
+  mgcv: 1.8-16
+  class: 7.3-14
+  survival: 2.39-4
+7:
+  devtools: 1.12.0
+  miniCRAN: 0.2.7
