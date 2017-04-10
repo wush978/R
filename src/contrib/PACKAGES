@@ -393,6 +393,14 @@ License: GPL-2
 MD5sum: d5523943a5be6ca2f0ab557c900f8212
 NeedsCompilation: no
 
+Package: pvm
+Version: 0.2.3
+Depends: R(>= 2.10)
+Suggests: remotes, git2r, yaml
+License: GPL (>= 3)
+MD5sum: b24e9f8809e59bfdd77babb21a4c1f5a
+NeedsCompilation: no
+
 Package: R6
 Version: 2.1.2
 Depends: R (>= 3.0)
