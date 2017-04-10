@@ -108,6 +108,13 @@ License: MIT + file LICENSE
 MD5sum: 19d4ee8b0a196073c390fa6ecb73eb11
 NeedsCompilation: yes
 
+Package: DSRTeacher
+Version: 0.1.0
+Imports: httr(>= 1.2.1), getPass(>= 0.1.1), digest(>= 0.6.12)
+License: GPL (>= 3)
+MD5sum: c3cda08e709418e845036779dcc08cc2
+NeedsCompilation: no
+
 Package: evaluate
 Version: 0.8.3
 Depends: R (>= 3.0.2)
