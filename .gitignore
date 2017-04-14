@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.lib
+swirl
+DataScienceAndR
+.credential.R
+FastROC/
+slidify/
+slidifyLibraries/
+swirl/
+swirlify/
+pvm/
