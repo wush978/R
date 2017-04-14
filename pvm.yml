@@ -8,7 +8,6 @@ __version__: 0.2
   digest: 0.6.12
   codetools: 0.2-15
   curl: 2.3
-  pvm: github::repo=wush978/pvm@dcbcb71f529e805493058732b70505759a8f0501
   mime: 0.5
 3:
   memoise: 1.0.0
