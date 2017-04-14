@@ -129,7 +129,7 @@ Version: 0.2
 Imports: Rcpp (>= 0.10.6)
 LinkingTo: Rcpp
 License: GPL (>= 3)
-MD5sum: 5742a4af683925bdcc3575028c4c5770
+MD5sum: 218d914370ef61fd952c96a1705491c1
 NeedsCompilation: yes
 
 Package: filehash
