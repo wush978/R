@@ -1,3 +1,3 @@
 .libPaths(new = ".lib")
-options(repos = c("CRAN" = "http://csie.ntu.edu.tw"))
+options(repos = c("CRAN" = "http://cran.csie.ntu.edu.tw"))
 
