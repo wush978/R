@@ -10,10 +10,10 @@ transform <- function(prehook = NULL, posthook = NULL, dir.course.name = FALSE) 
   src.path <- gsub("yaml", "src.yaml", path)
   parsed <- yaml::yaml.load_file(src.path)
   lesson.name <- basename(dirname(normalizePath(src.path)))
-  course.repo <- git2r::repository(dirname(dirname(normalizePath(src.path))))
   if (dir.course.name) {
     course.name <- basename(dirname(dirname(normalizePath(src.path))))
   } else {
+    course.repo <- git2r::repository(dirname(dirname(normalizePath(src.path))))
     course.name <- gsub(".git", "", basename(git2r::remote_url(course.repo, "origin")), fixed = TRUE)
   }
   for(i in seq_along(parsed)) {
