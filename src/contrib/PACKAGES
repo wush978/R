@@ -603,6 +603,15 @@ License: MIT + file LICENSE
 MD5sum: dd95919720639034b7daf2a1134dc56f
 NeedsCompilation: no
 
+Package: swirlify
+Version: 0.4.1
+Depends: R (>= 3.2.0), swirl (>= 2.2.11)
+Imports: stringr, yaml, rmarkdown, whisker, utils
+Suggests: testthat, digest, git2r
+License: MIT + file LICENSE
+MD5sum: 2d02d8eac5712cf0d5fad277d9f408b0
+NeedsCompilation: no
+
 Package: testit
 Version: 0.5
 Suggests: rstudioapi
