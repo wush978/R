@@ -4,7 +4,9 @@ loadNamespace("swirlify")
 transform <- function(prehook = NULL, posthook = NULL, dir.course.name = FALSE) {
   .check.question <- function(obj, expected.keys) {
     stopifnot(!duplicated(names(obj)))
-    stopifnot(length(setdiff(names(obj), expected.keys)) == 0)
+    if (length(setdiff(names(obj), expected.keys)) != 0) {
+      stop(sprintf("Unknown component: %s", paste(setdiff(names(obj), expected.keys), collapse = ",")))
+    }
   }
   path <- getOption("swirlify_lesson_file_path")
   src.path <- gsub("yaml", "src.yaml", path)
