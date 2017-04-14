@@ -1,7 +1,7 @@
 cat("Loading transform\n")
-loadNamespace("git2r")
+# loadNamespace("git2r")
 loadNamespace("swirlify")
-transform <- function(prehook = NULL, posthook = NULL) {
+transform <- function(prehook = NULL, posthook = NULL, dir.course.name = FALSE) {
   .check.question <- function(obj, expected.keys) {
     stopifnot(!duplicated(names(obj)))
     stopifnot(length(setdiff(names(obj), expected.keys)) == 0)
@@ -11,7 +11,11 @@ transform <- function(prehook = NULL, posthook = NULL) {
   parsed <- yaml::yaml.load_file(src.path)
   lesson.name <- basename(dirname(normalizePath(src.path)))
   course.repo <- git2r::repository(dirname(dirname(normalizePath(src.path))))
-  course.name <- gsub(".git", "", basename(git2r::remote_url(course.repo, "origin")), fixed = TRUE)
+  if (dir.course.name) {
+    course.name <- basename(dirname(dirname(normalizePath(src.path))))
+  } else {
+    course.name <- gsub(".git", "", basename(git2r::remote_url(course.repo, "origin")), fixed = TRUE)
+  }
   for(i in seq_along(parsed)) {
     tryCatch({
       if (!is.null(prehook)) parsed[[i]] <- prehook(parsed[[i]])
@@ -67,14 +71,14 @@ transform <- function(prehook = NULL, posthook = NULL) {
   write(yaml::as.yaml(parsed), file = path)
 }
 
-transform_all <- function(prehook = NULL, posthook = NULL) {
+transform_all <- function(prehook = NULL, posthook = NULL, dir.course.name = FALSE) {
   course_list <- dir(".", "lesson.yaml", recursive = TRUE)
   origin_course <- getOption("swirlify_lesson_file_path")
   tryCatch({
     lapply(course_list, function(path) {
       print(path)
       swirlify::set_lesson(path, FALSE, TRUE)
-      suppressWarnings(transform(prehook, posthook))
+      suppressWarnings(transform(prehook, posthook, dir.course.name))
     })
   }, finally = {
     if (!is.null(origin_course)) swirlify::set_lesson(origin_course)
