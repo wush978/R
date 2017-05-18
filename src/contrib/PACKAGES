@@ -594,22 +594,13 @@ MD5sum: 5ca977c90351f78b1b888b379114a7b4
 NeedsCompilation: no
 
 Package: swirl
-Version: 101.5.4.4
+Version: 101.5.5
 Depends: R (>= 3.2.3)
 Imports: stringr, stringi, testthat, httr (>= 1.1.0), yaml, RCurl,
         digest, tools, utils, rappdirs(>= 0.3.1), methods, getPass(>=
         0.1-1)
 License: MIT + file LICENSE
-MD5sum: dd95919720639034b7daf2a1134dc56f
-NeedsCompilation: no
-
-Package: swirlify
-Version: 0.4.1
-Depends: R (>= 3.2.0), swirl (>= 2.2.11)
-Imports: stringr, yaml, rmarkdown, whisker, utils
-Suggests: testthat, digest, git2r
-License: MIT + file LICENSE
-MD5sum: 2d02d8eac5712cf0d5fad277d9f408b0
+MD5sum: 7b1dca6dc1a576d1c08a430835bbcea7
 NeedsCompilation: no
 
 Package: testit
