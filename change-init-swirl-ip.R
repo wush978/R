@@ -1,0 +1,8 @@
+loadNamespace("git2r")
+git2r::reset(git2r::commits(git2r::repository("."))[[1]], "hard")
+if (interactive()) argv <- c("139.196.37.123") else argv <- commandArgs(TRUE)
+cat(sprintf("Changing server address to : %s", argv[1]))
+src <- readLines("init-swirl.R")
+http <- sprintf("http://%s/R", argv[1])
+dst <- gsub("https://wush978.github.io/R", http, src, fixed = TRUE)
+write(dst, file = "init-swirl.R")
