@@ -74,7 +74,8 @@ transform <- function(prehook = NULL, posthook = NULL, dir.course.name = FALSE) 
 }
 
 transform_all <- function(prehook = NULL, posthook = NULL, dir.course.name = FALSE) {
-  course_list <- dir(".", "lesson.yaml", recursive = TRUE)
+  course_src_list <- dir(".", "lesson.src.yaml", recursive = TRUE)
+  course_list <- gsub("lesson.src.yaml", "lesson.yaml", course_src_list, fixed = TRUE)
   origin_course <- getOption("swirlify_lesson_file_path")
   tryCatch({
     lapply(course_list, function(path) {
