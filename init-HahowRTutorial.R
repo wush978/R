@@ -29,13 +29,13 @@ if (package_version(R.version) < package_version("3.2.3")) local({
 
 local({
   repos <- "https://wush978.github.io/R"
+  if (!require(remotes)) install.packages("remotes", repos = "http://cran.csie.ntu.edu.tw")
+  if (!require(pvm)) utils::install.packages("pvm", repos = "https://wush978.github.io/R", type = "source")
   pvm::import.packages("https://raw.githubusercontent.com/wush978/pvm-list/master/dsr.yml")    
   pkgs.repos <- available.packages(contrib.url(repos, "source"))
   pkgs.installed <- installed.packages()
   check.result <- try(pkgs.repos["swirl", "Version"] == pkgs.installed["swirl", "Version"], silent = TRUE)
   if (!isTRUE(check.result)) {
-    if (!require(remotes)) install.packages("remotes", repos = "http://cran.csie.ntu.edu.tw")
-    if (!require(pvm)) utils::install.packages("pvm", repos = "https://wush978.github.io/R", type = "source")
     utils::install.packages("swirl", repos = repos)
   }
   library(swirl)
