@@ -43,5 +43,5 @@ local({
     library(methods)
   }
   try(uninstall_course("HahowRTutorial"), silent=TRUE)
-  install_course_url(sprintf("%s/course/HahowRTutorial", repos))
+  install_course_url(sprintf("%s/course/HahowRTutorial.zip", repos))
 })
