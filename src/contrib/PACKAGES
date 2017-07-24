@@ -413,7 +413,7 @@ Version: 0.2.3
 Depends: R(>= 2.10)
 Suggests: remotes, git2r, yaml
 License: GPL (>= 3)
-MD5sum: 2e41eef57f4d5c9d5f2c156b5d37d54c
+MD5sum: 3d97f6669d528599740464680aa54204
 NeedsCompilation: no
 
 Package: R6
@@ -669,4 +669,3 @@ Suggests: testthat
 License: BSD_3_clause + file LICENSE
 MD5sum: f2203ea395adaff6bd09134666191d9a
 NeedsCompilation: yes
-
