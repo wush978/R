@@ -409,11 +409,11 @@ MD5sum: d5523943a5be6ca2f0ab557c900f8212
 NeedsCompilation: no
 
 Package: pvm
-Version: 0.2.3
+Version: 0.2.4
 Depends: R(>= 2.10)
 Suggests: remotes, git2r, yaml
 License: GPL (>= 3)
-MD5sum: 79afea0099be9f5b00fb5a74b89e317b
+MD5sum: 81a766da940ba4a1461f515f432638b1
 NeedsCompilation: no
 
 Package: R6
@@ -594,13 +594,13 @@ MD5sum: 5ca977c90351f78b1b888b379114a7b4
 NeedsCompilation: no
 
 Package: swirl
-Version: 101.5.5
+Version: 101.5.6
 Depends: R (>= 3.2.3)
 Imports: stringr, stringi, testthat, httr (>= 1.1.0), yaml, RCurl,
         digest, tools, utils, rappdirs(>= 0.3.1), methods, getPass(>=
         0.1-1)
 License: MIT + file LICENSE
-MD5sum: 7b1dca6dc1a576d1c08a430835bbcea7
+MD5sum: dca30b6148a4114b642cd08a01d04078
 NeedsCompilation: no
 
 Package: testit
@@ -669,4 +669,3 @@ Suggests: testthat
 License: BSD_3_clause + file LICENSE
 MD5sum: f2203ea395adaff6bd09134666191d9a
 NeedsCompilation: yes
-
