@@ -3,7 +3,7 @@ library(yaml)
 library(swirl)
 
 argv <- if (interactive()) "commit" else commandArgs(TRUE)
-options(repos = c("http://wush978.github.io/R", CRAN="https://mran.revolutionanalytics.com/snapshot/2016-04-01"))
+options(repos = c(CRAN="https://mran.revolutionanalytics.com/snapshot/2017-11-01"))
 stopifnot(length(argv) == 1)
 stopifnot(argv %in% c("commit", "push"))
 
