@@ -15,11 +15,11 @@ if (file.exists(target)) {
   git2r::clone(target.repo, local_path = target)
 }
 pkg <- devtools::build(target, manual = TRUE)
-path <- contrib.url(".", type = "source")
+path <- contrib.url("./R", type = "source")
 unlink(dir(path, pattern = sprintf("%s*", target), full.names = TRUE))
 file.copy(pkg, path)
 tools::write_PACKAGES(path, verbose = TRUE)
-repo <- git2r::repository(".")
+repo <- git2r::repository("R")
 git2r::add(repo, file.path(path, pkg))
 git2r::add(repo, path)
 version <- read.dcf(file.path(target, "DESCRIPTION"))[,"Version"]
