@@ -413,7 +413,7 @@ Version: 0.2.5
 Depends: R(>= 2.10)
 Suggests: remotes, git2r, yaml
 License: GPL (>= 3)
-MD5sum: e2594926727f89aef47ee670cff29d57
+MD5sum: ce92ef1814f0dde1ee1ca7810f0675ca
 NeedsCompilation: no
 
 Package: R6
