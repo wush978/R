@@ -409,11 +409,11 @@ MD5sum: d5523943a5be6ca2f0ab557c900f8212
 NeedsCompilation: no
 
 Package: pvm
-Version: 0.2.5
+Version: 0.2.6
 Depends: R(>= 2.10)
-Suggests: remotes, git2r, yaml
+Suggests: remotes, git2r, yaml, parallel
 License: GPL (>= 3)
-MD5sum: ce92ef1814f0dde1ee1ca7810f0675ca
+MD5sum: 4af8e1cd04cb9f64577ef8b18401f277
 NeedsCompilation: no
 
 Package: R6
