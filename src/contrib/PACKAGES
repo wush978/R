@@ -409,11 +409,11 @@ MD5sum: d5523943a5be6ca2f0ab557c900f8212
 NeedsCompilation: no
 
 Package: pvm
-Version: 0.2.6
+Version: 0.4.0
 Depends: R(>= 2.10)
 Suggests: remotes, git2r, yaml, parallel
 License: GPL (>= 3)
-MD5sum: 4af8e1cd04cb9f64577ef8b18401f277
+MD5sum: c0c1e70f1d1e0ac50e6a9d82489d8cd8
 NeedsCompilation: no
 
 Package: R6
@@ -645,6 +645,14 @@ License: GPL (>= 2)
 MD5sum: ac38af2c6f74027c9592dd8f0acb7598
 NeedsCompilation: no
 
+Package: XML
+Version: 3.98-1.4
+Depends: R (>= 2.13.0), methods, utils
+Suggests: bitops, RCurl
+License: BSD_2_clause + file LICENSE
+MD5sum: 1a7f3ce6f264eeb109bfa57bedb26c14
+NeedsCompilation: yes
+
 Package: xml2
 Version: 0.1.2
 Depends: R (>= 3.1.0)
@@ -655,17 +663,10 @@ License: GPL (>= 2)
 MD5sum: 6d06d30e2bcf524ef79364c16ab6e388
 NeedsCompilation: yes
 
-Package: XML
-Version: 3.98-1.4
-Depends: R (>= 2.13.0), methods, utils
-Suggests: bitops, RCurl
-License: BSD_2_clause + file LICENSE
-MD5sum: 1a7f3ce6f264eeb109bfa57bedb26c14
-NeedsCompilation: yes
-
 Package: yaml
 Version: 2.1.13
 Suggests: testthat
 License: BSD_3_clause + file LICENSE
 MD5sum: f2203ea395adaff6bd09134666191d9a
 NeedsCompilation: yes
+
