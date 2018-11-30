@@ -70,7 +70,9 @@ transform <- function(prehook = NULL, posthook = NULL, dir.course.name = FALSE) 
       stop(conditionMessage(e))
     }) # tryCatch
   } # for
-  write(yaml::as.yaml(parsed), file = path)
+  .f <- file(path, "w", encoding = "UTF-8")
+  write(yaml::as.yaml(parsed), file = .f)
+  close(.f)
 }
 
 transform_all <- function(prehook = NULL, posthook = NULL, dir.course.name = FALSE) {
