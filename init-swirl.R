@@ -9,6 +9,7 @@ local({
   repos <- "https://wush978.github.io/R"
   if (!suppressWarnings(require(remotes))) install.packages("remotes", repos = "http://cran.csie.ntu.edu.tw")
   if (!suppressWarnings(require(pvm))) utils::install.packages("pvm", repos = "https://wush978.github.io/R", type = "source")
+  pvm::metamran.update()
   pvm::import.packages(sprintf("https://raw.githubusercontent.com/wush978/pvm-list/master/dsr-%s.yml", package_version(R.version)))
   utils::install.packages("swirl", repos = repos)
   library(swirl)
