@@ -35,7 +35,7 @@ local({
   }, finally = {
     options(warn = .warn)
   })
-  pvm::import.packages(tmp.path, Ncpus)
+  pvm::import.packages(tmp.path, Ncpus = 2)
   utils::install.packages("swirl", repos = repos)
   library(swirl)
   library(curl)
