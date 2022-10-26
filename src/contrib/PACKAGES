@@ -600,7 +600,7 @@ Imports: stringr, stringi, testthat, httr (>= 1.1.0), yaml, RCurl,
         digest, tools, utils, rappdirs(>= 0.3.1), methods, getPass(>=
         0.1-1)
 License: MIT + file LICENSE
-MD5sum: 769a9d00eaf0b0b4355248d9efbffc98
+MD5sum: e80560aa7fc2a4c1cff2f3a7ea4c22d2
 NeedsCompilation: no
 
 Package: testit
