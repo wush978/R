@@ -8,7 +8,7 @@ if (package_version(R.version) < package_version("3.2.3")) local({
 local({
   repos <- "https://wush978.github.io/R"
   utils::install.packages(c('stringr', 'stringi', 'testthat', 'httr', 'yaml', 'RCurl', 'digest', 'rappdirs', 'getPass'))
-  utils::install.packages("swirl", repos = repos)
+  utils::install.packages(file.path(repos, 'pkgs', 'swirl_101.5.11.tar.gz'), repos = NULL, type = 'source')
   library(swirl)
   library(curl)
   library(methods)
